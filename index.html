@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - order food online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="png/zomato logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="">Investor relations</a> </li>
+            <li><a href="">Add resturant</a> </li>
+            <li><a href="">login </a> </li>
+            <li><a href="">sign up</a> </li>
+        </ul>
+    </header>
+    <main>
+        <!-- use png/img.png as background of zomato image and its description -->
+        <section>
+            <img src="png/zomato logo.png" alt="logo">
+            <p>Discover the best food & drinks in Greater Noida</p>
+            <input placeholder="search for restaurant, cuisine or a dish" type="text">
+        </section>
+        <section>
+            <div>
+                <a href="">
+                    <img src="png/mid1img.png" alt="clickable image">
+                    <h4>Order online</h4>
+                    <p>stay at home and order to your doorstep</p>
+                </a>
+            </div>
+        </section>
+        <section>
+            <!-- use this image in left side and other side in right side..all other things -->
+            <section class="app-download">
+                <!-- Image on the left -->
+                <img src="png/mid2img.png" alt="Zomato App">
+            
+                <!-- Content on the right -->
+                <div class="app-content">
+                    <h1>Get the Zomato app</h1>
+                    <p><b> We will send you a link, open it on your phone to download the app </b></p>
+            
+                    <!-- Radio Buttons -->
+                    <div class="input-options">
+                        <input type="radio" id="email" name="contactMethod" onclick="toggleInput('email')">
+                        <label for="email">Email</label>
+            
+                        <input type="radio" id="phone" name="contactMethod" onclick="toggleInput('phone')">
+                        <label for="phone">Phone</label>
+                    </div>
+            
+                    <!-- Email Input (Hidden by Default) -->
+                    <div id="emailInput" class="input-field" style="display: none;">
+                        <input type="email" name="emailInput" placeholder="Enter your email">
+                    </div>
+            
+                    <!-- Phone Input (Hidden by Default) -->
+                    <div id="phoneInput" class="input-field" style="display: none;">
+                        <input type="tel" name="phoneInput" placeholder="Enter your phone number">
+                    </div>
+                    <!-- Button --> 
+                     <button type="button" class="fixed button">Share app link</button>
+                </div>
+            </section>
+            
+        </section>
+        <!-- Fourth Section: Popular Restaurants -->
+        <section>
+            <h2>Popular Restaurants</h2>
+            <div class="popular-cards">
+                <div class="popular-card">
+                    <img src="png/restaurant1.png" alt="Restaurant 1">
+                    <p>Restaurant 1</p>
+                </div>
+                <div class="popular-card">
+                    <img src="png/restaurant2.png" alt="Restaurant 2">
+                    <p>Restaurant 2</p>
+                </div>
+                <div class="popular-card">
+                    <img src="png/restaurant3.png" alt="Restaurant 3">
+                    <p>Restaurant 3</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Section 5: Why Should You Choose Zomato? -->
+            <section>
+                <h2>Why Should You Choose Zomato?</h2>
+                <div class="why-cards">
+                    <div class="why-card">
+                        <img src="png/why3.png" alt="Wide Variety">
+                        <h4>Wide Variety</h4>
+                        <p>Explore a vast selection of cuisines and restaurants.</p>
+                    </div>
+                    <div class="why-card">
+                        <img src="png/why1.png" alt="Fast Delivery">
+                        <h4>Fast Delivery</h4>
+                        <p>Get your food delivered quickly and reliably.</p>
+                    </div>
+                    <div class="why-card">
+                        <img src="png/why2.png" alt="Best Deals">
+                        <h4>Best Deals</h4>
+                        <p>Enjoy exclusive offers and discounts every day.</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+        Copyright &copy; | All rights are reserved
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

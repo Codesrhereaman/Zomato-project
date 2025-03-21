@@ -1,0 +1,270 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+}
+
+.logo img {
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Section 1: Hero Section with Background */
+section:nth-of-type(1) {
+  background: url('/png/img.png') center/cover no-repeat;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+section:nth-of-type(1) img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+section:nth-of-type(1) p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+section:nth-of-type(1) input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Section 2: Order Online (Middle Box) */
+section:nth-of-type(2) {
+  background-color: #fff;
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+  align-items: start;
+}
+
+section:nth-of-type(2) a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+section:nth-of-type(2) img {
+  max-width: 100px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0px;
+}
+
+section:nth-of-type(2) h4 {
+  margin: 10px 0 5px;
+}
+
+section:nth-of-type(2) p {
+  margin: 0;
+}
+/* Section 3: App Download - Layout */
+section.app-download {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  gap: 5px;
+  align-items: center; /* Align content with image */
+  background-color: #2adb30;
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Section 3: App Download - Image Styling */
+section.app-download > img {
+  grid-column: 1 / 2; /* Image in first column */
+  width: 100%;
+  height: 100%;
+  max-height: 300px; /* Ensure image doesn't overflow */
+  object-fit: cover;
+}
+
+/* Section 3: App Download - Content Box */
+section.app-download > .app-content {
+  grid-column: 2 / 3; /* Content in second column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align content vertically */
+  padding: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Section 3: App Download - Heading Styling */
+section.app-download .app-content h1 {
+  margin: 0;
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(222, 144, 144);
+}
+
+/* Section 3: App Download - Paragraph Styling */
+section.app-download .app-content p {
+  margin: 5px 0 15px;
+  font-size: 1em;
+  color: rgb(251, 4, 4);
+}
+
+/* Section 3: App Download - Input Options */
+section.app-download .input-options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Section 3: App Download - Radio Buttons */
+section.app-download .input-options input[type="radio"] {
+  margin: 0 5px 0 15px;
+}
+
+section.app-download .input-options label {
+  margin-right: 10px;
+  color: white;
+}
+
+/* Section 3: App Download - Input Fields */
+section.app-download #emailInput,
+section.app-download #phoneInput {
+  margin-top: 10px;
+}
+
+section.app-download #emailInput input,
+section.app-download #phoneInput input {
+  width: 60%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Section 3: App Download - Button */
+section.app-download .fixed.button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+section.app-download .fixed.button:hover {
+  background-color: #e60000;
+}
+
+
+/* Section 4: Popular Restaurants */
+section:nth-of-type(4) {
+  background-color: #fff;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section:nth-of-type(4) h2 {
+  margin-bottom: 20px;
+}
+
+.popular-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.popular-card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.popular-card img {
+  width: 100%;
+  display: block;
+}
+
+.popular-card p {
+  padding: 10px;
+  margin: 0;
+}
+
+/* Section 5: Why Should You Choose Zomato? */
+section:nth-of-type(5) {
+  background-color: #f50909;
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section:nth-of-type(5) h2 {
+  margin-bottom: 30px;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+  color: solid black;
+}
+
+.why-card {
+  background-color: #b30707eb;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.why-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.why-card img {
+  width: 90%; /* Adjust this value for size */
+  max-width: 300px; /* Set a larger limit */
+  height: auto;
+  display: flex;
+  margin: 0 auto
+}
